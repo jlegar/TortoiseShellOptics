@@ -17,16 +17,18 @@ header {
 header img {
   height: 1.5rem;
   width: auto;
+  margin-right: 1rem;
 }
 
 header span {
-  margin: 0 1rem;
+  display: flex;
+  align-items: center;
 }
 
 nav a {
   display: inline-block;
   text-decoration: none;
-  margin: 0 2rem;
+  margin-right: 2rem;
   color: white;
 }
 
@@ -86,8 +88,6 @@ h3 {
 }
 
 .banner__info {
-  margin: 0;
-  top: 10rem;
   padding: 1.5rem 5rem;
   background-color: white;
 }
@@ -140,4 +140,37 @@ h3 {
   padding: 0.5rem 1.25rem;
   margin: 1rem 0;
   text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    margin-top: 0;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .banner {
+    align-items: flex-start;
+    height: 22rem;
+  }
+
+  .banner__info {
+    margin: 8rem 2rem;
+    padding: 0.75rem 4rem;
+  }
+
+  h2 {
+    font-size: 1.33rem;
+  }
+
+  main {
+    margin-top: 23rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  
 }
