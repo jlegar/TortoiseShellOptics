@@ -32,6 +32,10 @@ nav a {
   color: white;
 }
 
+#header__menu {
+  display: none;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -68,7 +72,7 @@ h3 {
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 1rem auto;
 }
 
@@ -93,7 +97,7 @@ h3 {
 }
 
 .info {
-  margin: 3rem;
+  margin: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -131,6 +135,7 @@ h3 {
 }
 
 .highlights__block {
+  margin: 0 auto;
 }
 
 .highlights__block h3 {
@@ -172,5 +177,70 @@ h3 {
 }
 
 @media only screen and (max-width: 480px) {
-  
+  header {
+    margin-top: 0;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .banner {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .banner__info {
+    margin: 12rem 0 auto;
+    padding: 1rem auto;
+    width: 100%;
+  }
+
+  main {
+    margin-top: 17rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .info {
+    display: grid;
+    grid: repeat(3, 1fr) / auto;
+    grid-gap: 1.54rem;
+    margin: 3.77rem auto;
+  }
+
+  .info p {
+    font-size: 0.77rem;
+  }
+
+  .info__block {
+    justify-content: space-around;
+  }
+
+  .highlights {
+    grid: 1fr 1fr / 1fr;
+    grid-gap: 4rem;
+  }
+
+  .highlights__block {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+  }
+
+  .highlights__block h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #header__menu {
+    display: block;
+  }
 }
